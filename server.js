@@ -9,18 +9,11 @@ var corsOptions = {
 
 app.use(cors());
  
-app.get('/budgets', cors(corsOptions), function(req, res) {
+app.get('/organizations', cors(corsOptions), function(req, res) {
     res.send([
-    	
-    	{
-    		"budgets":
-    		[
-	    		{"id":1,"name":"Enspiral Services","current_round_id":1},
-	    		{"id":2,"name":"Enspiral Foundation","current_round_id":null}
-    		]
-    	}
-
-    	]);
+      {"id":1,"name":"Enspiral Services","current_round_id":1},
+      {"id":2,"name":"Enspiral Foundation","current_round_id":null}
+    ]);
 });
 app.get('/round/:id', cors(corsOptions), function(req, res) {
     res.send(
