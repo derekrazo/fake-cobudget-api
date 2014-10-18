@@ -17,6 +17,8 @@ var buckets = {
       "target_cents": 50000,
       "max_cents": 100000,
       "allocation_total_cents": 20000,
+      "percentage_funded" : 80,
+      "sponsor_name_or_email" : "Derek Razo",
       "allocations": [
         {
           "amount_cents": 20000,
@@ -39,6 +41,8 @@ var buckets = {
       "target_cents": 50000,
       "max_cents": 100000,
       "allocation_total_cents": 20000,
+      "percentage_funded" : 30,
+      "sponsor_name_or_email" : "Derek Razo",
       "allocations": [
         {
           "amount_cents": 20000,
@@ -60,6 +64,8 @@ var buckets = {
       "target_cents": 50000,
       "max_cents": 100000,
       "allocation_total_cents": 20000,
+      "percentage_funded" : 60,
+      "sponsor_name_or_email" : "Derek Razo",
       "allocations": [
         {
           "amount_cents": 20000,
@@ -108,6 +114,32 @@ app.get('/round/:id', cors(corsOptions), function (req, res) {
           "target_cents": 50000,
           "max_cents": 100000,
           "allocation_total_cents": 20000,
+          "percentage_funded" : 80,
+          "sponsor_name_or_email" : "Derek Razo",
+          "allocations": [
+            {
+              "amount_cents": 20000,
+              "created_at": "2014-09-10T23:50:27.486Z",
+              "updated_at": "2014-09-10T23:54:27.665Z",
+              "allocator": {
+                "id": 1,
+                "name": "Craig"
+              }
+            } 
+          ]
+        },
+
+        {
+          "id": 2,
+          "name": "Fund Mikey's Haircut",
+          "description": "He needs it real bad guys.",
+          "created_at": "2014-09-10T23:32:12.147Z",
+          "min_cents": 20000,
+          "target_cents": 50000,
+          "max_cents": 100000,
+          "allocation_total_cents": 20000,
+          "percentage_funded" : 30,
+          "sponsor_name_or_email" : "Derek Razo",
           "allocations": [
             {
               "amount_cents": 20000,
@@ -122,22 +154,24 @@ app.get('/round/:id', cors(corsOptions), function (req, res) {
         },
 
         {
-          "id": 2,
-          "name": "Fund API Redesign",
-          "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit sit amet fringilla lacinia. Duis congue augue nisi, quis dignissim purus ullamcorper vel. Ut sapien augue, ultrices sit amet odio sed, consequat laoreet ante. ",
+          "id": 3,
+          "name": "Fund Mikey's Shower",
+          "description": "I think the whole network stands to greatly benefit from Mikey's shower.",
           "created_at": "2014-09-10T23:32:12.147Z",
-          "min_cents": 3000000,
-          "target_cents": 4000000,
-          "max_cents": 20000000,
+          "min_cents": 20000,
+          "target_cents": 50000,
+          "max_cents": 100000,
           "allocation_total_cents": 20000,
+          "percentage_funded" : 60,
+          "sponsor_name_or_email" : "Derek Razo",
           "allocations": [
             {
               "amount_cents": 20000,
               "created_at": "2014-09-10T23:50:27.486Z",
               "updated_at": "2014-09-10T23:54:27.665Z",
               "allocator": {
-                "id": 2,
-                "name": "Nanz"
+                "id": 1,
+                "name": "Craig"
               }
             }
           ]
