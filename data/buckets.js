@@ -1,8 +1,9 @@
+var projects = require('./projects');
+
 module.exports = {
   1 : {
     "id": 1,
-    "name": "Fund Cobudget Development",
-    "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit sit amet fringilla lacinia. Duis congue augue nisi, quis dignissim purus ullamcorper vel. Ut sapien augue, ultrices sit amet odio sed, consequat laoreet ante. ",
+    "project": projects[1],
     "created_at": "2014-09-10T23:32:12.147Z",
     "min": 200,
     "target": 500,
@@ -29,8 +30,7 @@ module.exports = {
   },
   2 : {
     "id": 2,
-    "name": "Fund Mikey's Haircut",
-    "description": "He needs it real bad guys.",
+    "project": projects[2],
     "created_at": "2014-09-10T23:32:12.147Z",
     "min": 0,
     "target": 1000,
@@ -57,8 +57,7 @@ module.exports = {
   },
   3 : {
   "id": 3,
-    "name": "Fund Mikey's Shower",
-    "description": "I think the whole network stands to greatly benefit from Mikey's shower.",
+    "project": projects[3],
     "created_at": "2014-09-10T23:32:12.147Z",
     "min": 200,
     "target": 1000,
