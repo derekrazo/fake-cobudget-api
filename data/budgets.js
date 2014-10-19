@@ -7,19 +7,15 @@ module.exports = {
   1: {
     "id": 1,
     "organization": {
-      "id": 1,
-      "type": "Organization",
+      "id": "/organizations/1",
     },
     "status": "active",
     "buckets": [{
-      "id": 1,
-      "type": "Bucket",
+      "id": "/buckets/1",
     }, {
-      "id": 2,
-      "type": "Bucket",
+      "id": "/buckets/2",
     }, {
-      "id": 3,
-      "type": "Bucket",
+      "id": "/buckets/3",
     }],
   },
 };

@@ -4,8 +4,7 @@ module.exports = {
   1 : {
     "id": 1,
     "project": {
-      "id": 1,
-      "type": "Project",
+      "id": "projects/1",
     },
     "min": 200,
     "target": 500,
@@ -14,16 +13,14 @@ module.exports = {
     "current": 200,
     "ratio_funded" : 0.40,
     "sponsor" : {
-      "id": 2,
-      "type": "Person",
+      "id": "/people/2",
     },
     "allocations": [
       {
         "amount": 200,
         "currency": "NZD",
         "allocator": {
-          "id": 1,
-          "type": "Person",
+          "id": "/people/1",
         },
       },
     ],
@@ -31,8 +28,7 @@ module.exports = {
   2 : {
     "id": 2,
     "project": {
-      "id": 2,
-      "type": "Project",
+      "id": "/projects/2",
     },
     "min": 0,
     "target": 1000,
@@ -41,16 +37,14 @@ module.exports = {
     "current": 200,
     "ratio_funded" : 0.20,
     "sponsor": {
-      "id": 2,
-      "type": "Person",
+      "id": "/people/2",
     },
     "allocations": [
       {
         "amount": 200,
         "currency": "NZD",
         "allocator": {
-          "id": 1,
-          "type": "Person",
+          "id": "/people/1",
         },
       },
     ],
@@ -58,8 +52,7 @@ module.exports = {
   3 : {
     "id": 3,
     "project": {
-      "id": 3,
-      "type": "Project",
+      "id": "/projects/3",
     },
     "min": 200,
     "target": 1000,
@@ -68,16 +61,14 @@ module.exports = {
     "currency": "NZD",
     "ratio_funded" : 0.60,
     "sponsor": {
-      "id": 2,
-      "type": "Person",
+      "id": "/people/2",
     },
     "allocations": [
       {
         "amount": 600,
         "currency": "NZD",
         "allocator": {
-          "id": 1,
-          "type": "Person",
+          "id": "/people/1",
         },
       },
     ],

@@ -13,12 +13,11 @@ var corsOptions = {
 var data = require('./data');
 
 // for store of data
-data.forEach(function (store, type) {
+data.forEach(function (store, name) {
   //console.log(type, "store", store);
-  var store = data.value()[type];
 
   // setup store.find()
-  var findRoute = '/' + type.toLowerCase() + 's';
+  var findRoute = '/' + name;
   //console.log(type + ".find() route", findRoute);
   app.get(findRoute, function (req, res) {
     res.send(store.values().value());

@@ -1,10 +1,10 @@
 // match types with stores
 var stores = {
-  Person: require('./people'),
-  Organization: require('./organizations'),
-  Budget: require('./budgets'),
-  Bucket: require('./buckets'),
-  Project: require('./projects'),
+  people: require('./people'),
+  organizations: require('./organizations'),
+  budgets: require('./budgets'),
+  buckets: require('./buckets'),
+  projects: require('./projects'),
 };
 
 // populate nested stores
@@ -22,13 +22,18 @@ _(stores).mapValues(function (store, type) {
       if (
         object &&
         typeof object === 'object' &&
-        Object.keys(object).length === 2 &&
-        object.id && object.type
+        Object.keys(object).length === 1 &&
+        object.id
       ) {
         // update with entity at link
         var link = object;
-        //console.log("link", link);
-        linkedEntity = stores[link.type][link.id];
+        // strip leading / from id
+        var id = link.id.replace(/^\/|\/$/g, '');
+        // get collection id and entity id
+        var match = id.split("/");
+        var collectionId = match[0];
+        var entityId = match[1];
+        linkedEntity = stores[collectionId][entityId];
         //console.log("linked entity", linkedEntity);
         this.update(linkedEntity);
       }
