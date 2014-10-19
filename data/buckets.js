@@ -4,7 +4,6 @@ module.exports = {
   1 : {
     "id": 1,
     "project": projects[1],
-    "created_at": "2014-09-10T23:32:12.147Z",
     "min": 200,
     "target": 500,
     "max": 1000,
@@ -19,8 +18,6 @@ module.exports = {
       {
         "amount": 200,
         "currency": "NZD",
-        "created_at": "2014-09-10T23:50:27.486Z",
-        "updated_at": "2014-09-10T23:54:27.665Z",
         "allocator": {
           "id": 1,
           "name": "Craig"
@@ -31,7 +28,6 @@ module.exports = {
   2 : {
     "id": 2,
     "project": projects[2],
-    "created_at": "2014-09-10T23:32:12.147Z",
     "min": 0,
     "target": 1000,
     "max": 2000,
@@ -46,8 +42,6 @@ module.exports = {
       {
         "amount": 200,
         "currency": "NZD",
-        "created_at": "2014-09-10T23:50:27.486Z",
-        "updated_at": "2014-09-10T23:54:27.665Z",
         "allocator": {
           "id": 1,
           "name": "Craig"
@@ -58,7 +52,6 @@ module.exports = {
   3 : {
     "id": 3,
     "project": projects[3],
-    "created_at": "2014-09-10T23:32:12.147Z",
     "min": 200,
     "target": 1000,
     "max": 1000,
@@ -73,8 +66,6 @@ module.exports = {
       {
         "amount": 600,
         "currency": "NZD",
-        "created_at": "2014-09-10T23:50:27.486Z",
-        "updated_at": "2014-09-10T23:54:27.665Z",
         "allocator": {
           "id": 1,
           "name": "Craig"
