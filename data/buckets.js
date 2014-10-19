@@ -56,7 +56,7 @@ module.exports = {
     ],
   },
   3 : {
-  "id": 3,
+    "id": 3,
     "project": projects[3],
     "created_at": "2014-09-10T23:32:12.147Z",
     "min": 200,
