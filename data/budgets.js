@@ -7,6 +7,7 @@ module.exports = {
   1: {
     "id": 1,
     "organization": orgs[1],
+    "status": "active",
     "buckets": _.at(buckets, 1, 2, 3),
   },
 };
