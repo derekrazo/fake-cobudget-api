@@ -10,34 +10,26 @@ var corsOptions = {
 };
 
 // get data
-var budgets = require('./data/budgets');
-var buckets = require('./data/buckets');
-var organizations = require('./data/organizations');
+var data = require('./data');
 
-app.use(cors());
+// for store of data
+data.forEach(function (store, type) {
+  //console.log(type, "store", store);
+  var store = data.value()[type];
 
-app.get('/organizations', cors(corsOptions), function (req, res) {
-  res.send(_.values(organizations));
-});
+  // setup store.find()
+  var findRoute = '/' + type.toLowerCase() + 's';
+  //console.log(type + ".find() route", findRoute);
+  app.get(findRoute, function (req, res) {
+    res.send(store.values().value());
+  });
 
-app.get('/organizations/:id', cors(corsOptions), function (req, res) {
-  res.send(organizations[req.params.id]);
-});
-
-app.get('/budgets', cors(corsOptions), function (req, res) {
-  res.send(_.values(budgets));
-});
-
-app.get('/budgets/:id', cors(corsOptions), function (req, res) {
-  res.send(budgets[req.params.id])
-});
-
-app.get('/buckets', cors(corsOptions), function (req, res) {
-  res.send(_.values(buckets));
-});
-
-app.get('/buckets/:id', cors(corsOptions), function (req, res) {
-  res.send(buckets[req.params.id]);
+  // setup store.get(id)
+  var getRoute = findRoute + '/:id';
+  //console.log(type + ".get() route", getRoute);
+  app.get(getRoute, function (req, res) {
+    res.send(store.value()[req.params.id]);
+  });
 });
 
 app.listen(3000);

@@ -6,8 +6,20 @@ var buckets = require('./buckets');
 module.exports = {
   1: {
     "id": 1,
-    "organization": orgs[1],
+    "organization": {
+      "id": 1,
+      "type": "Organization",
+    },
     "status": "active",
-    "buckets": _.at(buckets, 1, 2, 3),
+    "buckets": [{
+      "id": 1,
+      "type": "Bucket",
+    }, {
+      "id": 2,
+      "type": "Bucket",
+    }, {
+      "id": 3,
+      "type": "Bucket",
+    }],
   },
 };

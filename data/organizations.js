@@ -4,6 +4,7 @@ module.exports = {
     "name": "Enspiral Services",
     "budgets": [{
       "id": 1,
+      "type": "Budget",
     }]
   },
   2: {

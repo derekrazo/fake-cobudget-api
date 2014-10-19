@@ -3,7 +3,10 @@ var projects = require('./projects');
 module.exports = {
   1 : {
     "id": 1,
-    "project": projects[1],
+    "project": {
+      "id": 1,
+      "type": "Project",
+    },
     "min": 200,
     "target": 500,
     "max": 1000,
@@ -12,7 +15,7 @@ module.exports = {
     "ratio_funded" : 0.40,
     "sponsor" : {
       "id": 2,
-      "name": "Derek Razo",
+      "type": "Person",
     },
     "allocations": [
       {
@@ -20,14 +23,17 @@ module.exports = {
         "currency": "NZD",
         "allocator": {
           "id": 1,
-          "name": "Craig"
+          "type": "Person",
         },
       },
     ],
   },
   2 : {
     "id": 2,
-    "project": projects[2],
+    "project": {
+      "id": 2,
+      "type": "Project",
+    },
     "min": 0,
     "target": 1000,
     "max": 2000,
@@ -36,7 +42,7 @@ module.exports = {
     "ratio_funded" : 0.20,
     "sponsor": {
       "id": 2,
-      "name": "Derek Razo",
+      "type": "Person",
     },
     "allocations": [
       {
@@ -44,14 +50,17 @@ module.exports = {
         "currency": "NZD",
         "allocator": {
           "id": 1,
-          "name": "Craig"
+          "type": "Person",
         },
       },
     ],
   },
   3 : {
     "id": 3,
-    "project": projects[3],
+    "project": {
+      "id": 3,
+      "type": "Project",
+    },
     "min": 200,
     "target": 1000,
     "max": 1000,
@@ -60,7 +69,7 @@ module.exports = {
     "ratio_funded" : 0.60,
     "sponsor": {
       "id": 2,
-      "name": "Derek Razo",
+      "type": "Person",
     },
     "allocations": [
       {
@@ -68,7 +77,7 @@ module.exports = {
         "currency": "NZD",
         "allocator": {
           "id": 1,
-          "name": "Craig"
+          "type": "Person",
         },
       },
     ],
