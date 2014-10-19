@@ -10,7 +10,7 @@ module.exports = {
     "max": 1000,
     "currency": "NZD",
     "current": 200,
-    "percentage_funded" : 40,
+    "ratio_funded" : 0.40,
     "sponsor" : {
       "id": 2,
       "name": "Derek Razo",
@@ -37,7 +37,7 @@ module.exports = {
     "max": 2000,
     "currency": "NZD",
     "current": 200,
-    "percentage_funded" : 20,
+    "ratio_funded" : 0.20,
     "sponsor": {
       "id": 2,
       "name": "Derek Razo",
@@ -64,7 +64,7 @@ module.exports = {
     "max": 1000,
     "current": 600,
     "currency": "NZD",
-    "percentage_funded" : 60,
+    "ratio_funded" : 0.60,
     "sponsor": {
       "id": 2,
       "name": "Derek Razo",
