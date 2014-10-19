@@ -10,6 +10,10 @@ module.exports = {
     "currency": "NZD",
     "current": 200,
     "percentage_funded" : 40,
+    "sponsor" : {
+      "id": 2,
+      "name": "Derek Razo",
+    },
     "allocations": [
       {
         "amount": 200,
@@ -34,7 +38,10 @@ module.exports = {
     "currency": "NZD",
     "current": 200,
     "percentage_funded" : 20,
-    "sponsor_name_or_email" : "Derek Razo",
+    "sponsor": {
+      "id": 2,
+      "name": "Derek Razo",
+    },
     "allocations": [
       {
         "amount": 200,
@@ -59,7 +66,10 @@ module.exports = {
     "current": 600,
     "currency": "NZD",
     "percentage_funded" : 60,
-    "sponsor_name_or_email" : "Derek Razo",
+    "sponsor": {
+      "id": 2,
+      "name": "Derek Razo",
+    },
     "allocations": [
       {
         "amount": 600,
